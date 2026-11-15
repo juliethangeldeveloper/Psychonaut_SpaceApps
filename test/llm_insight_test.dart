@@ -215,6 +215,7 @@ void main() {
           'Prenez un médicament ce soir. Dormez bien.',
           'うつの可能性があります。よく休みましょう。',
           'قد يكون هذا اكتئاب. نم جيداً.',
+          'Похоже на депрессию. Отдохните сегодня.',
         ]) {
           final c = _coordinator(
             MockClient(

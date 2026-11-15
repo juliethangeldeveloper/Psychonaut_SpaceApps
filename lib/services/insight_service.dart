@@ -52,7 +52,8 @@ abstract final class InsightSafety {
     'depresi|ansiedad|trastorno|diagn[oó]stic|medicament|medicaci|dosis|'
     'dépression|anxiété|médicament|posologie|'
     'うつ|障害|診断|服用|投薬|処方|'
-    'اكتئاب|اضطراب|تشخيص|دواء|أدوية|جرعة',
+    'اكتئاب|اضطراب|تشخيص|دواء|أدوية|جرعة|'
+    'депресс|расстройств|диагно|лекарств|медикамент|дозировк|антидепресс|снотворн',
     caseSensitive: false,
   );
 

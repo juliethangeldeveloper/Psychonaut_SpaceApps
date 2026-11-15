@@ -162,6 +162,7 @@ const _languages = <(String?, String?)>[
   ('fr', 'Français'),
   ('ja', '日本語'),
   ('ar', 'العربية'),
+  ('ru', 'Русский'),
 ];
 
 class _LanguageCard extends StatelessWidget {

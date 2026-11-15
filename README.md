@@ -47,7 +47,7 @@ Psychonaut is a daily psychological health companion. It compares each person on
 - **The reading:** each indicator is compared with the personal baseline and given one of four risk levels: on course, drifting, off course or alert. Together they give one "degrees off course" number.
 - **The response:** one suggested action from a fixed list, and three answers for each indicator: how it's measured, why it matters and what to do.
 
-It runs on a phone, a tablet or a crew console, in English, Spanish, French, Japanese and Arabic.
+It runs on a phone, a tablet or a crew console, in English, Spanish, French, Japanese, Arabic and Russian.
 
 ## Impact
 
@@ -64,7 +64,7 @@ It runs on a phone, a tablet or a crew console, in English, Spanish, French, Jap
 
 Flutter 3.50 and Dart, one codebase for iOS, Android, macOS, Linux and web, with a Material 3 dark theme.
 
-- **Packages:** flutter_riverpod (state), go_router (navigation), fl_chart (charts), shared_preferences (on-device storage), file_picker (profile import), http (optional model calls), intl and flutter_localizations (five languages), material_ui, cupertino_ui and cupertino_icons.
+- **Packages:** flutter_riverpod (state), go_router (navigation), fl_chart (charts), shared_preferences (on-device storage), file_picker (profile import), http (optional model calls), intl and flutter_localizations (six languages), material_ui, cupertino_ui and cupertino_icons.
 - **Development only:** flutter_test, flutter_lints, clock and cross_file.
 - **Fonts, bundled for offline use:** Inter, Space Grotesk, Noto Sans Arabic and Noto Sans JP.
 
@@ -87,7 +87,7 @@ flutter test
 ./tool/coverage.sh
 ```
 
-`flutter devices` lists device ids. All 218 tests pass, and line coverage of `lib/` is 99.75%, leaving out generated localization code, the wearable stub and four private constructors. The current code builds for macOS, web, iOS and Android. It has been run on macOS and Chrome, and on the iOS simulator and Android emulator before the reaction test was added. It has not been built on Linux, which needs a Linux machine.
+`flutter devices` lists device ids. All 220 tests pass, and line coverage of `lib/` is 99.75%, leaving out generated localization code, the wearable stub and four private constructors. The current code builds for macOS, web, iOS and Android. It has been run on macOS and Chrome, and on the iOS simulator and Android emulator before the reaction test was added. It has not been built on Linux, which needs a Linux machine.
 
 **Optional AI models.** Both are off by default. Pass the values at build time, then choose the source in Profile, AI source.
 
@@ -153,7 +153,7 @@ Rules applied on top:
 
 - **Privacy:** by default everything stays on the device, and the data is never used to rank the crew. The Crew screen shows one anonymous group number. The cloud model is optional. If chosen, it sends scores and the personality profile, never the name, role or private notes.
 - **Safety:** at alert level the app always shows the fixed message "Tell your crew medical officer and prepare a summary for Earth". It never diagnoses, names a disorder or gives medication advice. Generated text that breaks these rules is rejected, and every reading shows its source.
-- **Limits:** the thresholds are assumptions and have not been validated. The app runs on fictional sample data only. Wearable integration is a stub, and only sleep is scored from it. Locus of control comes from one self-rated question, not a validated scale. The reaction test is not a validated instrument. The Spanish, French, Japanese and Arabic text was machine-drafted and has not been reviewed by native speakers.
+- **Limits:** the thresholds are assumptions and have not been validated. The app runs on fictional sample data only. Wearable integration is a stub, and only sleep is scored from it. Locus of control comes from one self-rated question, not a validated scale. The reaction test is not a validated instrument. The Spanish, French, Japanese, Arabic and Russian text was machine-drafted and has not been reviewed by native speakers.
 
 ## Future integrations
 
@@ -170,7 +170,7 @@ None of this is built yet. It is the path from prototype to full product.
 | Where | Tool | How it was used |
 | --- | --- | --- |
 | Research, concept and written text | Claude (Anthropic) | Research, concept development and written text |
-| App code and unit tests | GitHub Copilot, an AI coding assistant, running the Claude Fable 5.2 model | Generated the Dart code in `lib/`, the tests in `test/`, `tool/coverage.sh` and the four translations, and drafted this README from the team's brief. Reviewed by the team. |
+| App code and unit tests | GitHub Copilot, an AI coding assistant, running the Claude Fable 5.2 model | Generated the Dart code in `lib/`, the tests in `test/`, `tool/coverage.sh` and the five translations, and drafted this README from the team's brief. Reviewed by the team. |
 | Screen designs, logo and cover image | Claude (Anthropic) | Generated with Claude. Exported images carry a visible "SI-generated" watermark. |
 | Sample profiles and sample health data | GitHub Copilot | SI-generated and fictional. They do not describe real people. |
 

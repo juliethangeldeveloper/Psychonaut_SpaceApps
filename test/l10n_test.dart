@@ -16,7 +16,7 @@ import 'package:psychonaut_application/services/rule_based_insight_service.dart'
 import 'risk_engine_test.dart' as f;
 import 'test_app.dart';
 
-const _locales = ['en', 'es', 'fr', 'ja', 'ar'];
+const _locales = ['en', 'es', 'fr', 'ja', 'ar', 'ru'];
 
 Map<String, dynamic> _arb(String code) =>
     jsonDecode(File('lib/l10n/app_$code.arb').readAsStringSync())
@@ -89,6 +89,7 @@ void main() {
       expect(lookupAppLocalizations(const Locale('fr')).navHome, 'Accueil');
       expect(lookupAppLocalizations(const Locale('ja')).navHome, 'ホーム');
       expect(lookupAppLocalizations(const Locale('ar')).navHome, 'الرئيسية');
+      expect(lookupAppLocalizations(const Locale('ru')).navHome, 'Главная');
     });
 
     test('plurals follow each language', () {
@@ -98,6 +99,13 @@ void main() {
       final es = lookupAppLocalizations(const Locale('es'));
       expect(es.insNights(1), contains('1 noche'));
       expect(es.insNights(3), contains('3 noches'));
+      // Russian has three count forms: 1 and 21, 2 to 4, and 5 to 20.
+      final ru = lookupAppLocalizations(const Locale('ru'));
+      expect(ru.insNights(1), contains('1 недавняя ночь'));
+      expect(ru.insNights(3), contains('3 недавние ночи'));
+      expect(ru.insNights(5), contains('5 недавних ночей'));
+      expect(ru.insNights(21), contains('21 недавняя ночь'));
+      expect(formatNumber(ru, 6.4), '6,4');
     });
 
     test('the alert message is fixed text in every language', () {
@@ -236,7 +244,7 @@ void main() {
   });
 
   group('screens in each language', () {
-    for (final code in ['es', 'fr', 'ja', 'ar']) {
+    for (final code in ['es', 'fr', 'ja', 'ar', 'ru']) {
       testWidgets('Home renders in $code without overflow', (tester) async {
         final app = await pumpApp(
           tester,
@@ -296,7 +304,7 @@ void main() {
       app.expectNoErrors();
     });
 
-    for (final code in ['es', 'ja', 'ar']) {
+    for (final code in ['es', 'ja', 'ar', 'ru']) {
       testWidgets('check-in, trends, crew and profile fit in $code', (
         tester,
       ) async {

@@ -72,6 +72,7 @@ const _languages = {
   'fr': 'French',
   'ja': 'Japanese',
   'ar': 'Arabic',
+  'ru': 'Russian',
 };
 
 double _round(double v) => (v * 100).round() / 100;

@@ -8,7 +8,8 @@ class AppText {
 
   static const headingFamily = 'SpaceGrotesk';
   static const bodyFamily = 'Inter';
-  static const fallbackFamilies = ['NotoSansArabic', 'NotoSansJP'];
+  // Inter first so Cyrillic headings, which Space Grotesk lacks, stay in the brand family.
+  static const fallbackFamilies = ['Inter', 'NotoSansArabic', 'NotoSansJP'];
 
   static TextStyle _style(
     String family,

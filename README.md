@@ -116,6 +116,8 @@ flutter run -d macos \
 - Never write a key into a file in this repository. A key passed this way is embedded in the built app, so do not publish that build.
 - If a model is not set up, fails or is too slow, the reading falls back to the rule-based source and says so.
 - Both model options have been tested against a fake server only, not a real model.
+- The cloud example uses Claude. Anthropic's OpenAI SDK compatibility documentation (https://platform.claude.com/docs/en/api/openai-sdk) gives `https://api.anthropic.com/v1/` as the base URL, so the full chat completions endpoint is the one above. Anthropic describes this compatibility layer as intended for testing and comparing models, not as a long-term production solution. Use a key scoped to a workspace, because the app does not send the `anthropic-workspace-id` header that other key types need.
+- Any other provider that accepts the OpenAI-compatible chat completions format with a strict JSON schema should also work. Check its documentation for the endpoint and the model name.
 
 ## Project structure
 
@@ -176,10 +178,12 @@ None of this is built yet. It is the path from prototype to full product.
 
 ## Use of Super Intelligence (SI) tools
 
+The idea is the team's own. We chose the challenge and set the direction: a psychology-first tool focused on prevention, personal baselines instead of population averages, wearable data, and a personality profile for each crew member, including locus of control and boredom proneness. We also chose the name and the slogan. SI tools were used to research that idea and to build it.
+
 | Where | Tool | How it was used |
 | --- | --- | --- |
-| Research, concept and written text | Claude (Anthropic) | Research, concept development and written text |
-| App code and unit tests | GitHub Copilot, an AI coding assistant, running the Claude Fable 5.2 model | Generated the Dart code in `lib/`, the tests in `test/`, `tool/coverage.sh` and the five translations, and drafted this README from the team's brief. Reviewed by the team. |
+| Research and written text | Claude (Anthropic) | Research to find the evidence base for the team's idea, and help drafting written text |
+| App code and unit tests | GitHub Copilot, an AI coding assistant, running the Claude Fable 5.2 model | Generated the Dart code in `lib/`, the tests in `test/`, `tool/coverage.sh` and the five translations, following the team's specification, and drafted this README from the team's brief. Reviewed by the team. |
 | Screen designs, logo and cover image | Claude (Anthropic) | Generated with Claude. Exported images carry a visible "SI-generated" watermark. |
 | Sample profiles and sample health data | GitHub Copilot | SI-generated and fictional. They do not describe real people. |
 
@@ -232,6 +236,7 @@ No SI-generated content uses, contains or modifies NASA branding or design eleme
 | cross_file | https://pub.dev/packages/cross_file |
 | clock | https://pub.dev/packages/clock |
 | flutter_localizations and flutter_test (part of the Flutter SDK) | https://flutter.dev |
+| Anthropic: OpenAI SDK compatibility (cloud model example) | https://platform.claude.com/docs/en/api/openai-sdk |
 
 ## Team
 
@@ -239,5 +244,11 @@ No SI-generated content uses, contains or modifies NASA branding or design eleme
 | --- | --- |
 | Julieth Lorne | Mission Systems Engineer |
 | Laura Chavez | Human Factors & Behavioral Health Lead |
+
+## Licence
+
+The code in this repository is released under the MIT License. See the `LICENSE` file.
+
+Third-party parts keep their own terms. The bundled fonts in `assets/fonts` are under the SIL Open Font License; their licence files are in the same folder. The Flutter packages are under the licences listed on their pub.dev pages. The Mini-IPIP items come from the International Personality Item Pool, which is in the public domain.
 
 This project is original work created for the 2026 NASA Space Apps Challenge. It is not endorsed by NASA or any space agency, and it uses no NASA logos, flags or mission identifiers.

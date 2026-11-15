@@ -13,6 +13,7 @@
 ## App demos
 
 Watch the sample recordings: 
+
 [Demo 1]
 
 
@@ -30,6 +31,14 @@ https://github.com/user-attachments/assets/770c05de-a005-4d62-8a97-a3f8590413e7
 
 
 https://github.com/user-attachments/assets/3c8dc897-30be-47cc-abae-9242c8e8c61d
+
+
+[Demo 4]
+
+
+
+https://github.com/user-attachments/assets/b8e7c90a-7ca0-4eec-bc46-b9c76365b2cc
+
 
 
 Psychonaut targets web, iOS and Android mobile devices, macOS, and Linux. Linux has not yet been built or tested; see the platform notes below.

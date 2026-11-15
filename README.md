@@ -26,7 +26,6 @@ It runs on a phone, a tablet or a crew console, in English, Spanish, French, Jap
 ## Impact
 
 - **In space:** early warning for crews with no psychologist on board and delayed contact with Earth.
-- **On Earth:** the same approach can help people far from care, such as remote communities and older adults living alone.
 
 ## What makes it different
 

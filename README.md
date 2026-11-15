@@ -10,34 +10,19 @@
 
 ## App demos
 
-Watch the sample recordings: 
+Watch the sample recordings:
 
-[Chrome App sample/Desktop]
-
+**Chrome app sample, desktop**
 
 https://github.com/user-attachments/assets/3481fdb8-37d0-44ee-9076-dd299fcc1867
 
-[Mobile App sample iOS - Questionary]
-
-
+**Mobile app sample, iOS: questionnaire**
 
 https://github.com/user-attachments/assets/b8e7c90a-7ca0-4eec-bc46-b9c76365b2cc
 
-
-
-[Mobile App sample Android]
-
+**Mobile app sample, Android**
 
 https://github.com/user-attachments/assets/770c05de-a005-4d62-8a97-a3f8590413e7
-
-
-
-[Mobile App sample Android - Spanish]
-
-
-https://github.com/user-attachments/assets/3c8dc897-30be-47cc-abae-9242c8e8c61d
-
-
 
 Psychonaut targets web, iOS and Android mobile devices, macOS, and Linux. Linux has not yet been built or tested; see the platform notes below.
 
@@ -116,7 +101,7 @@ flutter run -d macos \
 - Never write a key into a file in this repository. A key passed this way is embedded in the built app, so do not publish that build.
 - If a model is not set up, fails or is too slow, the reading falls back to the rule-based source and says so.
 - Both model options have been tested against a fake server only, not a real model.
-- The cloud example uses Claude. Anthropic's OpenAI SDK compatibility documentation (https://platform.claude.com/docs/en/api/openai-sdk) gives `https://api.anthropic.com/v1/` as the base URL, so the full chat completions endpoint is the one above. Anthropic describes this compatibility layer as intended for testing and comparing models, not as a long-term production solution. Use a key scoped to a workspace, because the app does not send the header that other key types need.
+- The cloud example uses Claude. Anthropic's OpenAI SDK compatibility documentation (https://platform.claude.com/docs/en/api/openai-sdk) gives `https://api.anthropic.com/v1/` as the base URL, so the full chat completions endpoint is the one above. Anthropic describes this compatibility layer as intended for testing and comparing models, not as a long-term production solution.
 - Any other provider that accepts the OpenAI-compatible chat completions format with a strict JSON schema should also work. Check its documentation for the endpoint and the model name.
 
 ## Project structure
@@ -156,7 +141,7 @@ Rules applied on top:
 - **Mismatch:** self-rated mood at or above baseline while sleep is below baseline, or reaction time is more than 0.5 SD slower, for 7 or more days.
 - **Degrees off course:** 0 to 90, from 0.6 times the average and 0.4 times the worst indicator.
 
-**From published research and guidance,** as cited in our brief and not validated by us: the 7 to 8 hour sleep range and the 6 hour short-sleep line, the 500 ms lapse, a rested response of about 250 ms, the 3-minute test length, the closer watch after about 5 months, and the Mini-IPIP items and scoring.
+**From published research and guidance,** as cited in the resources below and not validated by us: the 7 to 8 hour sleep range and the 6 hour short-sleep line, the 500 ms lapse, a rested response of about 250 ms, the 3-minute test length, the closer watch after about 5 months, and the Mini-IPIP items and scoring.
 
 **Our own design assumptions:** everything else, including the 30-day baseline, the SD limits and day counts, the 0.8 SD late-mission limit, the 7-night and 3-night sleep rules, the 2 to 5 second stimulus interval, the default SD values, the 70 and 30 trait cut-offs, the mismatch and life-event windows, and the degrees weights.
 
@@ -178,11 +163,11 @@ None of this is built yet. It is the path from prototype to full product.
 
 ## Use of Super Intelligence (SI) tools
 
-The idea is the team's own. We chose the challenge and set the direction: a psychology-first tool focused on prevention, wearable data, and a personality profile for each crew member, including locus of control and boredom proneness. We also came up with the name and the played around with slogan. 
+The idea is the team's own. We chose the challenge and set the direction: a psychology-first tool focused on prevention, wearable data, and a personality profile for each crew member, including locus of control and boredom proneness. We also came up with the name and chose the slogan. SI tools were used to brainstorm and develop that direction, to research it and to build it.
 
 | Where | Tool | How it was used |
 | --- | --- | --- |
-| Research and written text | Claude (Anthropic) | Research to find the evidence base for the team's idea, and help drafting written text |
+| Brainstorming, research and written text | Claude (Anthropic) | Brainstorming to develop the team's direction, research to find the evidence base, and help drafting written text |
 | App code and unit tests | GitHub Copilot, an AI coding assistant, running the Claude Fable 5.2 model | Generated the Dart code in `lib/`, the tests in `test/`, `tool/coverage.sh` and the five translations, following the team's specification, and drafted this README from the team's brief. Reviewed by the team. |
 | Screen designs, logo and cover image | Claude (Anthropic) | Generated with Claude. Exported images carry a visible "SI-generated" watermark. |
 | Sample profiles and sample health data | GitHub Copilot | SI-generated and fictional. They do not describe real people. |
@@ -217,25 +202,10 @@ No SI-generated content uses, contains or modifies NASA branding or design eleme
 | Locus of control: Rotter 1966, Generalized expectancies for internal versus external control of reinforcement | https://pubmed.ncbi.nlm.nih.gov/5340840/ |
 | Astronaut sleep and vigilant attention study | https://pmc.ncbi.nlm.nih.gov/articles/PMC8919197 |
 | Cognition test battery, University of Pennsylvania | https://www.med.upenn.edu/uep/cognition.html |
-| Flutter | https://flutter.dev |
-| Inter typeface | https://fonts.google.com/specimen/Inter |
-| Space Grotesk typeface | https://fonts.google.com/specimen/Space+Grotesk |
-| Noto Sans Arabic typeface | https://github.com/google/fonts/tree/main/ofl/notosansarabic |
-| Noto Sans JP typeface | https://github.com/google/fonts/tree/main/ofl/notosansjp |
-| material_ui | https://pub.dev/packages/material_ui |
-| cupertino_ui | https://pub.dev/packages/cupertino_ui |
-| cupertino_icons | https://pub.dev/packages/cupertino_icons |
-| flutter_riverpod | https://pub.dev/packages/flutter_riverpod |
-| go_router | https://pub.dev/packages/go_router |
-| fl_chart | https://pub.dev/packages/fl_chart |
-| shared_preferences | https://pub.dev/packages/shared_preferences |
-| file_picker | https://pub.dev/packages/file_picker |
-| http | https://pub.dev/packages/http |
-| intl | https://pub.dev/packages/intl |
-| flutter_lints | https://pub.dev/packages/flutter_lints |
-| cross_file | https://pub.dev/packages/cross_file |
-| clock | https://pub.dev/packages/clock |
-| flutter_localizations and flutter_test (part of the Flutter SDK) | https://flutter.dev |
+| Flutter, including flutter_localizations and flutter_test | https://flutter.dev |
+| Flutter packages: material_ui, cupertino_ui, cupertino_icons, flutter_riverpod, go_router, fl_chart, shared_preferences, file_picker, http, intl, flutter_lints, cross_file and clock | https://pub.dev |
+| Inter and Space Grotesk typefaces | https://fonts.google.com |
+| Noto Sans Arabic and Noto Sans JP typefaces | https://github.com/google/fonts |
 | Anthropic: OpenAI SDK compatibility (cloud model example) | https://platform.claude.com/docs/en/api/openai-sdk |
 
 ## Team

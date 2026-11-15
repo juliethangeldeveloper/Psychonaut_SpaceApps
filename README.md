@@ -1,5 +1,3 @@
-
-
 # Psychonaut
 
 *"Outer space is the mission. Inner space is the journey."*
@@ -51,16 +49,18 @@ On a long mission there is no psychologist on board, and contact with Earth is d
 
 Psychonaut is a daily psychological health companion. It compares each person only with their own baseline, explains every reading and suggests one small action.
 
-- **Before launch:** a personality profile from the 20-item Mini-IPIP questionnaire, plus one question each on locus of control, preferred tone and preferred actions.
-- **Every day:** a six-slider check-in and wearable data. Every 4 days, a 3-minute reaction test. In this prototype the wearable data comes from sample files.
-- **The reading:** each indicator is compared with the personal baseline and given one of four risk levels: on course, drifting, off course or alert. Together they give one "degrees off course" number.
-- **The response:** one suggested action from a fixed list, and three answers for each indicator: how it's measured, why it matters and what to do.
+- **Before launch:** a personality profile from the 20-item Mini-IPIP questionnaire in the app, or from the 120-item IPIP-NEO-120 imported as a JSON file, which adds four facet scores. Three more questions set locus of control (after Rotter), preferred tone and preferred actions. The profile changes how soon a change is flagged, how advice is framed and which actions come first.
+- **Every day:** a six-slider check-in in the Captain's log (mood, stress, workload, engagement, focus and crew connection) with an optional private "Something happened at home" note, plus wearable data on sleep, heart rate variability, resting heart rate and activity. A streak counts entries, never scores. Every 4 days, a 3-minute reaction test records reaction time, lapses and false starts. In this prototype the wearable data comes from sample files and only sleep is scored.
+- **The reading:** each indicator is compared with the personal baseline and given one of four risk levels: on course, drifting, off course or alert. Together they give one "degrees off course" number. A mismatch is flagged when someone reports feeling fine while their sleep or reaction time has been off baseline for a week. At alert level the app always shows one fixed message: "Tell your crew medical officer and prepare a summary for Earth".
+- **The response:** one suggested action from a fixed list, three answers for each indicator (how it's measured, why it matters and what to do) and the NASA risk it relates to. Trends shows 14 nights of sleep and the reaction test history, and Ship morale shows the crew's wellbeing as one anonymous number with a shared weekly goal.
+- **The daily reading:** written by rules on the device by default. A crew can instead choose an on-board AI model that keeps everything on the vehicle, or a cloud model for use on Earth.
 
 It runs on a phone, a tablet or a crew console, in English, Spanish, French, Japanese, Arabic and Russian.
 
 ## Impact
 
 - **In space:** early warning for crews with no psychologist on board and delayed contact with Earth.
+- **On Earth:** the same approach can help people far from care, such as remote communities and older adults living alone.
 
 ## What makes it different
 

@@ -1,3 +1,5 @@
+
+
 # Psychonaut
 
 *"Outer space is the mission. Inner space is the journey."*
@@ -10,7 +12,25 @@
 
 ## App demos
 
-Watch the sample recordings: [Demo 1](docs/videos/app-demo-1.mov), [Demo 2](docs/videos/app-demo-2.mov), and [Demo 3](docs/videos/app-demo-3.mov).
+Watch the sample recordings: 
+[Demo 1]
+
+
+https://github.com/user-attachments/assets/3481fdb8-37d0-44ee-9076-dd299fcc1867
+
+
+[Demo 2]
+
+
+https://github.com/user-attachments/assets/770c05de-a005-4d62-8a97-a3f8590413e7
+
+
+
+[Demo 3]
+
+
+https://github.com/user-attachments/assets/3c8dc897-30be-47cc-abae-9242c8e8c61d
+
 
 Psychonaut targets web, iOS and Android mobile devices, macOS, and Linux. Linux has not yet been built or tested; see the platform notes below.
 

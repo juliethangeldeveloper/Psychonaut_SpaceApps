@@ -8,6 +8,12 @@
 
 > **Disclaimer:** Psychonaut does not diagnose and does not replace a clinician or flight surgeon. It is a hackathon prototype that runs on sample data.
 
+## App demos
+
+Watch the sample recordings: [Demo 1](docs/videos/app-demo-1.mov), [Demo 2](docs/videos/app-demo-2.mov), and [Demo 3](docs/videos/app-demo-3.mov).
+
+Psychonaut targets web, iOS and Android mobile devices, macOS, and Linux. Linux has not yet been built or tested; see the platform notes below.
+
 ## The problem
 
 On a long mission there is no psychologist on board, and contact with Earth is delayed. Small changes in mood, sleep, focus or crew connection can build for weeks before anyone notices them.

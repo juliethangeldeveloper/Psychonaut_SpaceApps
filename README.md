@@ -178,7 +178,7 @@ None of this is built yet. It is the path from prototype to full product.
 
 ## Use of Super Intelligence (SI) tools
 
-The idea is the team's own. We chose the challenge and set the direction: a psychology-first tool focused on prevention, personal baselines instead of population averages, wearable data, and a personality profile for each crew member, including locus of control and boredom proneness. We also chose the name and the slogan. SI tools were used to research that idea and to build it.
+The idea is the team's own. We chose the challenge and set the direction: a psychology-first tool focused on prevention, wearable data, and a personality profile for each crew member, including locus of control and boredom proneness. We also came up with the name and the played around with slogan. 
 
 | Where | Tool | How it was used |
 | --- | --- | --- |

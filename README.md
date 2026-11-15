@@ -12,30 +12,30 @@
 
 Watch the sample recordings: 
 
-[Demo 1]
+[Chrome App sample/Desktop]
 
 
 https://github.com/user-attachments/assets/3481fdb8-37d0-44ee-9076-dd299fcc1867
 
+[Mobile App sample iOS - Questionary]
 
-[Demo 2]
+
+
+https://github.com/user-attachments/assets/b8e7c90a-7ca0-4eec-bc46-b9c76365b2cc
+
+
+
+[Mobile App sample Android]
 
 
 https://github.com/user-attachments/assets/770c05de-a005-4d62-8a97-a3f8590413e7
 
 
 
-[Demo 3]
+[Mobile App sample Android - Spanish]
 
 
 https://github.com/user-attachments/assets/3c8dc897-30be-47cc-abae-9242c8e8c61d
-
-
-[Demo 4]
-
-
-
-https://github.com/user-attachments/assets/b8e7c90a-7ca0-4eec-bc46-b9c76365b2cc
 
 
 
@@ -116,7 +116,7 @@ flutter run -d macos \
 - Never write a key into a file in this repository. A key passed this way is embedded in the built app, so do not publish that build.
 - If a model is not set up, fails or is too slow, the reading falls back to the rule-based source and says so.
 - Both model options have been tested against a fake server only, not a real model.
-- The cloud example uses Claude. Anthropic's OpenAI SDK compatibility documentation (https://platform.claude.com/docs/en/api/openai-sdk) gives `https://api.anthropic.com/v1/` as the base URL, so the full chat completions endpoint is the one above. Anthropic describes this compatibility layer as intended for testing and comparing models, not as a long-term production solution. Use a key scoped to a workspace, because the app does not send the `anthropic-workspace-id` header that other key types need.
+- The cloud example uses Claude. Anthropic's OpenAI SDK compatibility documentation (https://platform.claude.com/docs/en/api/openai-sdk) gives `https://api.anthropic.com/v1/` as the base URL, so the full chat completions endpoint is the one above. Anthropic describes this compatibility layer as intended for testing and comparing models, not as a long-term production solution. Use a key scoped to a workspace, because the app does not send the header that other key types need.
 - Any other provider that accepts the OpenAI-compatible chat completions format with a strict JSON schema should also work. Check its documentation for the endpoint and the model name.
 
 ## Project structure

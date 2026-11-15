@@ -1,0 +1,38 @@
+{
+  "siNotice": "SI-generated and fictional. Does not describe a real person.",
+  "id": "maya-reyes",
+  "displayName": "Maya Reyes",
+  "role": "Commander",
+  "source": "mini-ipip",
+  "bigFive": {
+    "openness": 72,
+    "conscientiousness": 88,
+    "extraversion": 55,
+    "agreeableness": 64,
+    "emotionalStability": 78
+  },
+  "locusOfControl": "internal",
+  "copingStyle": "problem_focused",
+  "boredomProneness": 35,
+  "baseline": {
+    "sleepHours": 7.2,
+    "mood": 7,
+    "stress": 4,
+    "workload": 5,
+    "engagement": 7,
+    "focus": 7,
+    "connection": 7,
+    "reactionMs": 250,
+    "restingHeartRate": 58,
+    "hrv": 62
+  },
+  "preferences": {
+    "tone": "direct",
+    "preferredActions": [
+      "sleep_reset",
+      "garden",
+      "family_call",
+      "journal"
+    ]
+  }
+}

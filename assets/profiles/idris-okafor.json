@@ -1,0 +1,43 @@
+{
+  "siNotice": "SI-generated and fictional. Does not describe a real person.",
+  "id": "idris-okafor",
+  "displayName": "Idris Okafor",
+  "role": "Flight Engineer",
+  "source": "ipip-neo-120",
+  "bigFive": {
+    "openness": 58,
+    "conscientiousness": 74,
+    "extraversion": 28,
+    "agreeableness": 61,
+    "emotionalStability": 66
+  },
+  "facets": {
+    "excitementSeeking": 78,
+    "gregariousness": 22,
+    "vulnerability": 45,
+    "selfDiscipline": 70
+  },
+  "locusOfControl": "external",
+  "copingStyle": "avoidant",
+  "boredomProneness": 82,
+  "baseline": {
+    "sleepHours": 6.8,
+    "mood": 6,
+    "stress": 5,
+    "workload": 6,
+    "engagement": 6,
+    "focus": 7,
+    "connection": 5,
+    "reactionMs": 265,
+    "restingHeartRate": 62,
+    "hrv": 55
+  },
+  "preferences": {
+    "tone": "gentle",
+    "preferredActions": [
+      "new_project",
+      "exercise",
+      "journal"
+    ]
+  }
+}

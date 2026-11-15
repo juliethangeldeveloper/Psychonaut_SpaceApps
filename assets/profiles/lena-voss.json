@@ -1,0 +1,44 @@
+{
+  "siNotice": "SI-generated and fictional. Does not describe a real person.",
+  "id": "lena-voss",
+  "displayName": "Lena Voss",
+  "role": "Mission Specialist",
+  "source": "ipip-neo-120",
+  "bigFive": {
+    "openness": 81,
+    "conscientiousness": 28,
+    "extraversion": 88,
+    "agreeableness": 83,
+    "emotionalStability": 60
+  },
+  "facets": {
+    "excitementSeeking": 64,
+    "gregariousness": 91,
+    "vulnerability": 52,
+    "selfDiscipline": 25
+  },
+  "locusOfControl": "mixed",
+  "copingStyle": "emotion_focused",
+  "boredomProneness": 52,
+  "baseline": {
+    "sleepHours": 7.5,
+    "mood": 7,
+    "stress": 4,
+    "workload": 5,
+    "engagement": 7,
+    "focus": 8,
+    "connection": 8,
+    "reactionMs": 245,
+    "restingHeartRate": 56,
+    "hrv": 68
+  },
+  "preferences": {
+    "tone": "gentle",
+    "preferredActions": [
+      "family_call",
+      "window_time",
+      "garden",
+      "journal"
+    ]
+  }
+}

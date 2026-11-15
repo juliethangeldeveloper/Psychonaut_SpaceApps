@@ -1,0 +1,996 @@
+{
+  "@@locale": "en",
+  "navHome": "Home",
+  "navCheckIn": "Check in",
+  "navTrends": "Trends",
+  "navCrew": "Crew",
+  "profileAndSettings": "Profile and settings",
+  "back": "Back",
+  "sampleData": "Sample data",
+  "disclaimer": "Psychonaut does not diagnose or replace a clinician.",
+  "statusOnCourse": "On course",
+  "statusDrifting": "Drifting",
+  "statusOffCourse": "Off course",
+  "statusAlert": "Alert",
+  "traitSemantics": "{label} {valueNum} out of 100",
+  "@traitSemantics": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "valueNum": {
+        "type": "int"
+      }
+    }
+  },
+  "indicatorMood": "Mood",
+  "indicatorStress": "Stress",
+  "indicatorSleep": "Sleep",
+  "indicatorFocus": "Focus",
+  "indicatorMotivation": "Motivation",
+  "indicatorConnection": "Connection",
+  "indicatorWorkload": "Workload",
+  "indicatorReaction": "Reaction time",
+  "trendImproving": "improving",
+  "trendSteady": "steady",
+  "trendSlipping": "slipping",
+  "homeTitle": "Your heading",
+  "missionLine": "Mission day {dayNum} · {phase}",
+  "@missionLine": {
+    "placeholders": {
+      "dayNum": {
+        "type": "int"
+      },
+      "phase": {
+        "type": "String"
+      }
+    }
+  },
+  "headingSemantics": "{degreesNum} degrees off course. Overall {status}.",
+  "@headingSemantics": {
+    "placeholders": {
+      "degreesNum": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "headingOffCourse": "off course",
+  "headingMeasured": "Measured against your own baseline.",
+  "mismatchTitle": "What you say and what your body shows differ",
+  "mismatchBody": "You rated mood {mood}, at or above your baseline, but {details}. Both can be true. It is worth a closer look.",
+  "@mismatchBody": {
+    "placeholders": {
+      "mood": {
+        "type": "String"
+      },
+      "details": {
+        "type": "String"
+      }
+    }
+  },
+  "mismatchDetailSleep": "sleep has been below your baseline for {daysNum} days",
+  "@mismatchDetailSleep": {
+    "placeholders": {
+      "daysNum": {
+        "type": "int"
+      }
+    }
+  },
+  "mismatchDetailReaction": "reaction time has been slower than your baseline for {daysNum} days",
+  "@mismatchDetailReaction": {
+    "placeholders": {
+      "daysNum": {
+        "type": "int"
+      }
+    }
+  },
+  "mismatchJoin": "{first} and {second}",
+  "@mismatchJoin": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "lifeEventTitle": "Something happened at home",
+  "lifeEventCardBody": "That is hard to carry from so far away. You don't have to handle it alone. Mood is watched more closely for the next 14 days, and Message home is offered first.",
+  "reactionPromptTitle": "Time for your reaction test",
+  "reactionPromptText": "Three minutes. It shows fatigue before you feel it.",
+  "reactionPromptButton": "Start test",
+  "logOpenTitle": "Captain's log is open",
+  "logOpenText": "You haven't logged today.",
+  "logEntry": "Log entry",
+  "readingPreparing": "Preparing your reading",
+  "readingUnavailable": "Your reading is not available right now.",
+  "readingTitle": "Today's reading",
+  "readingFixedAlertNote": "Fixed safety message, not AI-generated.",
+  "aiGenerated": "AI-generated",
+  "suggestedAction": "Suggested action",
+  "readingSource": "Source: {source}",
+  "@readingSource": {
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "sourceRuleBased": "Rule-based · on this device",
+  "sourceOnBoard": "On-board model",
+  "sourceCloud": "Cloud model",
+  "loadError": "Could not load your data.\n{error}",
+  "@loadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "indicatorsTitle": "Indicators",
+  "panelMindMap": "Mind map",
+  "panelSelected": "Selected indicator",
+  "chartLast14": "{indicator}, last 14 days",
+  "@chartLast14": {
+    "placeholders": {
+      "indicator": {
+        "type": "String"
+      }
+    }
+  },
+  "chartSleep14": "Sleep, 14 nights",
+  "tileSemantics": "{indicator}, {status}, {trend}",
+  "@tileSemantics": {
+    "placeholders": {
+      "indicator": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      },
+      "trend": {
+        "type": "String"
+      }
+    }
+  },
+  "trendNoData": "No data yet",
+  "trendAtBaseline": "At your baseline",
+  "trendAbove": "{amount} above baseline",
+  "@trendAbove": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "trendBelow": "{amount} below baseline",
+  "@trendBelow": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "trendJoin": "{where}, {trend}",
+  "@trendJoin": {
+    "placeholders": {
+      "where": {
+        "type": "String"
+      },
+      "trend": {
+        "type": "String"
+      }
+    }
+  },
+  "detailNow": "Now {now} · your baseline {baseline} · {trend}",
+  "@detailNow": {
+    "placeholders": {
+      "now": {
+        "type": "String"
+      },
+      "baseline": {
+        "type": "String"
+      },
+      "trend": {
+        "type": "String"
+      }
+    }
+  },
+  "flaggedSooner": "Watched a day sooner for you, based on your profile.",
+  "detailHowMeasured": "How it's measured",
+  "detailWhy": "Why it matters",
+  "detailWhatToDo": "What to do now",
+  "whatToDoOptions": "{text} Options: {options}.",
+  "@whatToDoOptions": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      },
+      "options": {
+        "type": "String"
+      }
+    }
+  },
+  "whatToDoRecommended": "{text} Recommended: {action}.",
+  "@whatToDoRecommended": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      },
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "whatToDoOneStep": "One step: {action}. {description}",
+  "@whatToDoOneStep": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "nasaRiskLabel": "NASA risk",
+  "nasaHazardLabel": "Hazard",
+  "labelValue": "{label}: {value}",
+  "@labelValue": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "unitHours": "{value} h",
+  "@unitHours": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "unitMs": "{value} ms",
+  "@unitMs": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "refMeasuredMood": "Your daily self-rating from 1 to 10 in the Captain's log, compared with your own baseline.",
+  "refWhyMood": "Small, steady dips in mood are easier to fix early. Watching mood against your baseline is more useful than any single day.",
+  "refTodoMood": "Log honestly, then pick one small action. Tell a crewmate if low days keep adding up.",
+  "refMeasuredStress": "Your daily stress rating from 1 to 10, compared with your own baseline. Higher is less favourable.",
+  "refWhyStress": "Long confinement keeps stress levels raised. Rising stress also tends to cut into sleep and focus.",
+  "refTodoStress": "Slow your breathing for two minutes, move your body, or hand off one task for today.",
+  "refMeasuredSleep": "Hours slept each night, from the sleep tracker or sample data. 7 to 8 hours is the healthy range; 6 hours or less is short sleep.",
+  "refWhySleep": "Sleep loss and irregular schedules slow reactions, lower mood and make small problems feel bigger.",
+  "refTodoSleep": "Keep a fixed lights-out time, dim screens an hour before and cool the cabin for a sleep reset.",
+  "refMeasuredFocus": "Your focus rating from 1 to 10, together with the lapse count from the reaction test.",
+  "refWhyFocus": "Attention is the first thing to slip when sleep or workload goes wrong, and errors cost the most in flight.",
+  "refTodoFocus": "Take a real break away from screens, then do one task at a time. Check your sleep first.",
+  "refMeasuredMotivation": "Your engagement rating from 1 to 10, compared with your own baseline.",
+  "refWhyMotivation": "Long, repetitive missions invite boredom. Falling engagement can come before low mood.",
+  "refTodoMotivation": "Start a small new project or change the order of your day for variety.",
+  "refMeasuredConnection": "Your crew connection rating from 1 to 10, compared with your own baseline.",
+  "refWhyConnection": "Good teamwork depends on feeling connected. Distance from Earth also makes contact with family slower and rarer.",
+  "refTodoConnection": "Share a meal with the crew or send a message home. Small contact counts.",
+  "refMeasuredWorkload": "Your workload rating from 1 to 10, compared with your own baseline. Higher is less favourable.",
+  "refWhyWorkload": "Work overload eats into sleep. With delays to Earth, crews must manage their own pace.",
+  "refTodoWorkload": "Move one task to tomorrow, or ask the crew to share it. Protect your sleep window.",
+  "refMeasuredReaction": "A 3-minute reaction test. You tap as fast as you can when a stimulus appears. We record your mean response time, lapses (slower than 500 ms) and false starts.",
+  "refWhyReaction": "Slow or lapsing responses are one of the earliest signs of fatigue and drifting attention, often before you feel it yourself.",
+  "refTodoReaction": "Repeat the test every few days at a similar time of day, and compare with your own baseline.",
+  "actionExerciseTitle": "Exercise",
+  "actionExerciseDesc": "A short workout on the treadmill or bike.",
+  "actionJournalTitle": "Journal",
+  "actionJournalDesc": "Ten minutes of private writing about your day.",
+  "actionFamilyCallTitle": "Message home",
+  "actionFamilyCallDesc": "Send a message or schedule a call with someone on Earth.",
+  "actionGardenTitle": "Window and garden time",
+  "actionGardenDesc": "Spend time at the window or with the plants.",
+  "actionWindowTimeTitle": "Window time",
+  "actionWindowTimeDesc": "Spend ten minutes at the window looking at Earth or the stars.",
+  "actionNewProjectTitle": "Start a small project",
+  "actionNewProjectDesc": "Pick a short, new task to break the routine.",
+  "actionSleepResetTitle": "Sleep reset",
+  "actionSleepResetDesc": "Fixed lights-out, dim screens and a cooler cabin for one night.",
+  "aiRuleBasedLabel": "Rule-based",
+  "aiRuleBasedDesc": "Templates on this device. No network. Default.",
+  "aiOnBoardLabel": "On-board model",
+  "aiOnBoardDesc": "A model running on this computer or the ship's network. Nothing leaves the vehicle. Falls back to rule-based if it is not running.",
+  "aiCloudLabel": "Cloud model",
+  "aiCloudDesc": "A large language model over the internet. For use on Earth only. Sends your scores and personality profile, never your name or notes.",
+  "phaseAdjustment": "Adjustment",
+  "phaseAdjustmentNote": "Settling in. Routines are still forming.",
+  "phaseMid": "Mid-mission",
+  "phaseMidNote": "Steady state. Watch for slow drift.",
+  "phaseLate": "Late mission",
+  "phaseLateNote": "Past day 150 the watch is tighter. Behavioural symptoms rise after 5 to 6 months in analog studies.",
+  "riskBehavioral": "Behavioral conditions",
+  "riskTeamwork": "Inadequate teamwork",
+  "riskSleep": "Inadequate sleep and irregular schedules",
+  "hazardIsolation": "Isolation and confinement",
+  "hazardDistance": "Distance from Earth",
+  "toneDirect": "Direct",
+  "toneGentle": "Gentle",
+  "framingInternal": "Internal: data and options",
+  "framingMixed": "Mixed: data and one recommendation",
+  "framingExternal": "External: one clear step",
+  "copingProblem": "Problem-focused",
+  "copingEmotion": "Emotion-focused",
+  "copingAvoidant": "Avoidant",
+  "sourceMiniIpip": "Mini-IPIP questionnaire",
+  "sourceIpipNeo120": "IPIP-NEO-120 questionnaire",
+  "sourceImported": "Imported file",
+  "alertMessage": "Tell your crew medical officer and prepare a summary for Earth",
+  "sourceUnavailableNote": "{source} unavailable, so this reading came from the rule-based source.",
+  "@sourceUnavailableNote": {
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "insOnCourseDirect": "You are on course at {degreesNum}° off, and every reading sits close to your own baseline.",
+  "@insOnCourseDirect": {
+    "placeholders": {
+      "degreesNum": {
+        "type": "int"
+      }
+    }
+  },
+  "insOnCourseGentle": "You're on course, just {degreesNum}° off, and your readings sit close to your own normal.",
+  "@insOnCourseGentle": {
+    "placeholders": {
+      "degreesNum": {
+        "type": "int"
+      }
+    }
+  },
+  "insWorstGentle": "{indicator} has moved a little: {current} now against your usual {baseline}, and it is {trend}.",
+  "@insWorstGentle": {
+    "placeholders": {
+      "indicator": {
+        "type": "String"
+      },
+      "current": {
+        "type": "String"
+      },
+      "baseline": {
+        "type": "String"
+      },
+      "trend": {
+        "type": "String"
+      }
+    }
+  },
+  "insWorstDirect": "{indicator} is {status} at {current} against your baseline of {baseline}, and it is {trend}.",
+  "@insWorstDirect": {
+    "placeholders": {
+      "indicator": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      },
+      "current": {
+        "type": "String"
+      },
+      "baseline": {
+        "type": "String"
+      },
+      "trend": {
+        "type": "String"
+      }
+    }
+  },
+  "insMismatchGentle": "You said you feel fine, and that counts, but your body data has been off baseline for {daysNum} days.",
+  "@insMismatchGentle": {
+    "placeholders": {
+      "daysNum": {
+        "type": "int"
+      }
+    }
+  },
+  "insMismatchDirect": "You rated mood at or above baseline, but your body data has been off baseline for {daysNum} days.",
+  "@insMismatchDirect": {
+    "placeholders": {
+      "daysNum": {
+        "type": "int"
+      }
+    }
+  },
+  "insLifeGentle": "You noted something from home, so mood is being watched a little more closely for now.",
+  "insLifeDirect": "You logged something from home, so mood is watched more closely for 14 days.",
+  "insActionGentle": "One small step could help today: {action}.",
+  "@insActionGentle": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "insActionDirect": "One small action today: {action}.",
+  "@insActionDirect": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "insEvidenceAllOk": "All readings are within one standard deviation of your own baseline.",
+  "insEvidence": "{indicator}: {current} against a baseline of {baseline}.",
+  "@insEvidence": {
+    "placeholders": {
+      "indicator": {
+        "type": "String"
+      },
+      "current": {
+        "type": "String"
+      },
+      "baseline": {
+        "type": "String"
+      }
+    }
+  },
+  "insEvidenceBeyond": "{indicator}: {current} against a baseline of {baseline}, beyond {sd} SD for {count, plural, =1{1 day} other{{count} days}}.",
+  "@insEvidenceBeyond": {
+    "placeholders": {
+      "indicator": {
+        "type": "String"
+      },
+      "current": {
+        "type": "String"
+      },
+      "baseline": {
+        "type": "String"
+      },
+      "sd": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "insNights": "{count, plural, =1{1 recent night of 6 hours or less.} other{{count} recent nights of 6 hours or less.}}",
+  "@insNights": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "insLapses": "Lapses in the reaction test are above your usual.",
+  "insOptions": "Options: {options}",
+  "@insOptions": {
+    "placeholders": {
+      "options": {
+        "type": "String"
+      }
+    }
+  },
+  "insRecommended": "Recommended: {action}. {description}",
+  "@insRecommended": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "insRecommendedStep": "Recommended step: {action}. {description} Just this one step today.",
+  "@insRecommendedStep": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "insLatePhase": "After mission day 150 the watch is tighter, so smaller changes are flagged.",
+  "insLifeSupport": "Hearing from home can be heavy. Reaching out to someone you trust may help.",
+  "trendsTitle": "Course deviation",
+  "trendsSubtitle": "How you are drifting from your own baseline",
+  "trendsSleepTitle": "Sleep, last 14 nights",
+  "trendsNoTests": "No tests yet",
+  "trendsLatestReaction": "Latest {ms} · {count, plural, =1{1 lapse} other{{count} lapses}}",
+  "@trendsLatestReaction": {
+    "placeholders": {
+      "ms": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trendsNasaLine": "NASA risk: {risk}. Hazard: {hazards}.",
+  "@trendsNasaLine": {
+    "placeholders": {
+      "risk": {
+        "type": "String"
+      },
+      "hazards": {
+        "type": "String"
+      }
+    }
+  },
+  "correctionsTitle": "Course corrections",
+  "correctionsHint": "Pick one small action. Your preferred ones come first.",
+  "correctionsPlan": "Your plan: {title}. {description}",
+  "@correctionsPlan": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "correctionsSuggested": "Suggested",
+  "actionSemantics": "{title}. {description}",
+  "@actionSemantics": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "actionSemanticsSuggested": "{title}. {description} Suggested for today.",
+  "@actionSemanticsSuggested": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "chartNoSleep": "No sleep data yet.",
+  "chartBaselineValue": "Your baseline {value}",
+  "@chartBaselineValue": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "chartBaseline": "Your baseline",
+  "chartTooltipSleep": "{value}\n{status}",
+  "@chartTooltipSleep": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "chartSleepSemantics": "Sleep over the last {count} nights. Baseline {baseline}. Latest night {latest}, {status}.",
+  "@chartSleepSemantics": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "baseline": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "chartToday": "Today",
+  "chartNeedTests": "Take the reaction test a few times to see your trend.",
+  "chartReactionSemantics": "Reaction time over the last {count} tests. Baseline {baseline}. Latest {latest}.",
+  "@chartReactionSemantics": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "baseline": {
+        "type": "String"
+      },
+      "latest": {
+        "type": "String"
+      }
+    }
+  },
+  "chartNotEnough": "Not enough data yet.",
+  "chartDaysAgo": "-{daysNum}d",
+  "@chartDaysAgo": {
+    "placeholders": {
+      "daysNum": {
+        "type": "int"
+      }
+    }
+  },
+  "checkinTitle": "Captain's log",
+  "checkinSubtitle": "How are you today? Be honest. There are no wrong answers.",
+  "qEngagement": "Engagement",
+  "qConnection": "Crew connection",
+  "scaleLow": "Low",
+  "scaleHigh": "High",
+  "scaleCalm": "Calm",
+  "scaleVeryStressed": "Very stressed",
+  "scaleLight": "Light",
+  "scaleOverloaded": "Overloaded",
+  "scaleBored": "Bored",
+  "scaleAbsorbed": "Absorbed",
+  "scaleScattered": "Scattered",
+  "scaleSharp": "Sharp",
+  "scaleDistant": "Distant",
+  "scaleClose": "Close",
+  "checkinStreak": "{count}-day streak",
+  "@checkinStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "checkinStreakSemantics": "Logging streak: {count, plural, =1{1 day} other{{count} days}}",
+  "@checkinStreakSemantics": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "checkinStreakNote": "Counts days you logged, never how the scores look.",
+  "checkinOptional": "Optional.",
+  "checkinNoteLabel": "Private note",
+  "checkinNoteHelper": "Stays on this device. Never sent anywhere.",
+  "checkinUpdate": "Update today's entry",
+  "checkinLogged": "Entry logged. Thank you.",
+  "sliderSemantics": "{label} {valueNum} out of 10",
+  "@sliderSemantics": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "valueNum": {
+        "type": "int"
+      }
+    }
+  },
+  "crewTitle": "Ship morale",
+  "crewSubtitle": "How the crew is doing, as one anonymous number",
+  "moraleHigh": "High",
+  "moraleSteady": "Steady",
+  "moraleStrained": "Strained",
+  "moraleLow": "Low",
+  "crewOutOf100": "/ 100",
+  "crewMeterSemantics": "Crew morale {level}, {scoreNum} out of 100. {contributedNum} of {crewNum} crew checked in today.",
+  "@crewMeterSemantics": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      },
+      "scoreNum": {
+        "type": "int"
+      },
+      "contributedNum": {
+        "type": "int"
+      },
+      "crewNum": {
+        "type": "int"
+      }
+    }
+  },
+  "crewCheckedIn": "{contributedNum} of {crewNum} crew checked in today. Names are never shown.",
+  "@crewCheckedIn": {
+    "placeholders": {
+      "contributedNum": {
+        "type": "int"
+      },
+      "crewNum": {
+        "type": "int"
+      }
+    }
+  },
+  "crewGoalLabel": "Shared weekly goal",
+  "crewGoalTitle": "Share an evening meal together",
+  "crewGoalDesc": "Eat one evening meal with the crew on 6 evenings this week. Short and unhurried is fine.",
+  "crewGoalProgress": "{doneNum} of {segmentsNum} evenings done · {peopleNum} crew joined",
+  "@crewGoalProgress": {
+    "placeholders": {
+      "doneNum": {
+        "type": "int"
+      },
+      "segmentsNum": {
+        "type": "int"
+      },
+      "peopleNum": {
+        "type": "int"
+      }
+    }
+  },
+  "crewGoalSemantics": "{doneNum} of {segmentsNum} evenings done",
+  "@crewGoalSemantics": {
+    "placeholders": {
+      "doneNum": {
+        "type": "int"
+      },
+      "segmentsNum": {
+        "type": "int"
+      }
+    }
+  },
+  "crewJoin": "Join this goal",
+  "crewLeave": "You've joined. Tap to leave",
+  "crewPrivacyTitle": "Your privacy",
+  "crewPrivacyBody": "Only a group average is shown. Your own scores, notes and profile stay on this device. There are no names, no rankings and no comparisons between people.",
+  "profileTitle": "Profile",
+  "profileSubtitle": "Everything stays on this device unless you choose the cloud model.",
+  "profileRetake": "Retake the questionnaire",
+  "profileSamples": "Sample profiles",
+  "profileSamplesHint": "Switch to a bundled sample to see how the app adapts to a different person.",
+  "scienceTitle": "About the science",
+  "profileLoaded": "Loaded {name}.",
+  "@profileLoaded": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "profileCurrent": "Current",
+  "profileCurrentSemantics": "{label}, current",
+  "@profileCurrentSemantics": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "traitOpenness": "Openness",
+  "traitConscientiousness": "Conscientiousness",
+  "traitExtraversion": "Extraversion",
+  "traitAgreeableness": "Agreeableness",
+  "traitEmotionalStability": "Emotional stability",
+  "traitBoredom": "Boredom proneness",
+  "facetsTitle": "Facets",
+  "facetExcitement": "Excitement-seeking",
+  "facetGregariousness": "Gregariousness",
+  "facetVulnerability": "Vulnerability",
+  "facetSelfDiscipline": "Self-discipline",
+  "profileAdviceFraming": "Advice framing",
+  "profileCoping": "Coping style",
+  "profileTone": "Tone",
+  "profilePreferred": "Preferred actions",
+  "profileBaseline": "Baseline",
+  "dotJoin2": "{a} · {b}",
+  "@dotJoin2": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "dotJoin3": "{a} · {b} · {c}",
+  "@dotJoin3": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      },
+      "c": {
+        "type": "String"
+      }
+    }
+  },
+  "restingHeartRate": "Resting heart rate",
+  "hrvLabel": "HRV",
+  "unitBpm": "{value} bpm",
+  "@unitBpm": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsMissionDay": "Mission day",
+  "settingsPrevDay": "Previous day",
+  "settingsNextDay": "Next day",
+  "settingsDay": "Day {dayNum}",
+  "@settingsDay": {
+    "placeholders": {
+      "dayNum": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsMissionDaySemantics": "Mission day {dayNum}, {phase}",
+  "@settingsMissionDaySemantics": {
+    "placeholders": {
+      "dayNum": {
+        "type": "int"
+      },
+      "phase": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsAiSource": "AI source",
+  "settingsAiHint": "Where the written reading on Home comes from. At alert level the message is always fixed.",
+  "settingsLanguage": "Language",
+  "settingsLanguageHint": "Choose the language of the app. The written reading follows it.",
+  "languageDevice": "Device language",
+  "importTitle": "Import a profile",
+  "importHint": "Load another person from a JSON file with the same fields as the bundled samples. Nothing is uploaded.",
+  "importButton": "Import profile JSON",
+  "importFailed": "Couldn't import this file. {error}",
+  "@importFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importNotJson": "That file is not valid JSON.",
+  "importUnreadable": "That file could not be read.",
+  "importDone": "Imported {name}.",
+  "@importDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "scienceSubtitle": "Where the ideas in Psychonaut come from.",
+  "scienceAssumptionsTitle": "Design assumptions",
+  "sciHrpTitle": "NASA Human Research Program: Hazards and Risks",
+  "sciHrpBody": "The list of spaceflight hazards, including isolation and confinement and distance from Earth, and the human health risks linked to them.",
+  "sciBhrTitle": "NASA Behavioral Health Risk Record",
+  "sciBhrBody": "The behavioural health and performance risks for long missions: behavioural conditions, teamwork and sleep.",
+  "sciReactionTitle": "Reaction Self-Test research",
+  "sciReactionBody": "Basner, Mollicone and Dinges (2011), a brief psychomotor vigilance test (PVT-B), and the NASA Reaction Self-Test used by astronauts to track fatigue.",
+  "sciIpipTitle": "International Personality Item Pool (IPIP)",
+  "sciIpipBody": "Public domain items from ipip.ori.org. The 20-item Mini-IPIP is by Donnellan, Oswald, Baird and Lucas (2006). The full product would use the 120-item IPIP-NEO-120 for 30 facets.",
+  "sciAssume1": "Thresholds in standard deviations, and the days needed to flag a change, are design choices for a prototype.",
+  "sciAssume2": "The tighter limit after mission day 150 follows analog studies that report behavioural symptoms rising after 5 to 6 months.",
+  "sciAssume3": "Personality traits only shift how soon a change is flagged. They never label a person.",
+  "reactionTitle": "Reaction test",
+  "ipipItem1": "I am the life of the party",
+  "ipipItem2": "I sympathize with others' feelings",
+  "ipipItem3": "I get chores done right away",
+  "ipipItem4": "I have frequent mood swings",
+  "ipipItem5": "I have a vivid imagination",
+  "ipipItem6": "I don't talk a lot",
+  "ipipItem7": "I am not interested in other people's problems",
+  "ipipItem8": "I often forget to put things back in their proper place",
+  "ipipItem9": "I am relaxed most of the time",
+  "ipipItem10": "I am not interested in abstract ideas",
+  "ipipItem11": "I talk to a lot of different people at parties",
+  "ipipItem12": "I feel others' emotions",
+  "ipipItem13": "I like order",
+  "ipipItem14": "I get upset easily",
+  "ipipItem15": "I have difficulty understanding abstract ideas",
+  "ipipItem16": "I keep in the background",
+  "ipipItem17": "I am not really interested in others",
+  "ipipItem18": "I make a mess of things",
+  "ipipItem19": "I seldom feel blue",
+  "ipipItem20": "I do not have a good imagination",
+  "ipipAnswer1": "Very inaccurate",
+  "ipipAnswer2": "Moderately inaccurate",
+  "ipipAnswer3": "Neither inaccurate nor accurate",
+  "ipipAnswer4": "Moderately accurate",
+  "ipipAnswer5": "Very accurate",
+  "ipipAnswerSemantics": "{n}, {label}",
+  "@ipipAnswerSemantics": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      },
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "onbStep": "Step {stepNum} of {totalNum}",
+  "@onbStep": {
+    "placeholders": {
+      "stepNum": {
+        "type": "int"
+      },
+      "totalNum": {
+        "type": "int"
+      }
+    }
+  },
+  "onbNext": "Next",
+  "onbCreate": "Create profile",
+  "onbWelcome": "Welcome aboard",
+  "onbWelcomeSub": "Psychonaut, your daily companion",
+  "onbIntro": "Psychonaut compares you with your own baseline and suggests one small action a day. A short questionnaire of 20 statements tunes how soon it flags changes and how it speaks to you. Your answers stay on this device.",
+  "onbName": "Your name",
+  "onbRole": "Your role, for example Commander",
+  "onbExploring": "Just exploring?",
+  "onbSampleHint": "Load a sample profile instead.",
+  "onbCancel": "Cancel and keep my current profile",
+  "onbAboutYou": "About you",
+  "onbItemsHint": "Describe yourself as you generally are now, not as you wish to be. Page {pageNum} of {pagesNum}.",
+  "@onbItemsHint": {
+    "placeholders": {
+      "pageNum": {
+        "type": "int"
+      },
+      "pagesNum": {
+        "type": "int"
+      }
+    }
+  },
+  "onbLocusTitle": "When things go well or badly",
+  "onbLocusSub": "Which sounds most like you? This shapes how advice is framed.",
+  "onbLocusInternalTitle": "Mostly my own choices and effort",
+  "onbLocusInternalText": "What happens to me is mostly down to what I do.",
+  "onbLocusMixedTitle": "A mix of both",
+  "onbLocusMixedText": "My effort matters, and so do circumstances I can't control.",
+  "onbLocusExternalTitle": "Mostly circumstances and other people",
+  "onbLocusExternalText": "Much of what happens is outside my control.",
+  "onbToneTitle": "How should Psychonaut talk to you?",
+  "onbToneSub": "You can change this later.",
+  "onbToneDirectEx": "\"Sleep is down 0.8 h. Try a sleep reset tonight.\"",
+  "onbToneGentleEx": "\"Sleep has moved a little. A calm evening might help.\"",
+  "onbActionsTitle": "What helps you reset?",
+  "onbActionsSub": "Pick the actions you like. The order you tap is the order they are offered.",
+  "onbYourProfile": "Your profile",
+  "onbTraits": "Personality traits",
+  "onbTraitsNote": "From a 20-item short form. Traits only change how soon a shift is flagged. They never label you.",
+  "onbPrefs": "Your preferences",
+  "onbActionsLabel": "Actions",
+  "roleDefault": "Crew member",
+  "importPickerTitle": "Choose a profile JSON file",
+  "reactionIntro": "This 3-minute test checks how alert you are. When the screen says \"Tap now\", tap as fast as you can. Do not tap before it appears.",
+  "reactionKeyboardHint": "On a keyboard, press Space.",
+  "reactionWait": "Wait…",
+  "reactionTapNow": "Tap now",
+  "reactionTooSoon": "Too soon. Wait for the signal.",
+  "reactionTimeLeft": "{time} left",
+  "@reactionTimeLeft": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reactionDiscardHint": "Going back now discards this test.",
+  "reactionDoneTitle": "Test complete",
+  "reactionMean": "Mean reaction time",
+  "reactionResponses": "Responses",
+  "reactionLapses": "Lapses (slower than 500 ms)",
+  "reactionFalseStarts": "False starts",
+  "reactionSaved": "Saved. You can see it in Trends.",
+  "reactionNoResponses": "No responses were recorded, so nothing was saved.",
+  "reactionDone": "Done"
+}

@@ -11,8 +11,11 @@
 ## App demos
 
 Watch the sample recordings:
+**MacOS app sample**
 
-**Chrome app sample, desktop**
+https://github.com/user-attachments/assets/61bca101-b0d6-491a-a735-8e1760e6e173
+
+**Chrome app sample**
 
 https://github.com/user-attachments/assets/3481fdb8-37d0-44ee-9076-dd299fcc1867
 
